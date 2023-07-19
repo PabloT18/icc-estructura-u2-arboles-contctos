@@ -34,3 +34,19 @@ Los diccionarios son estructuras de datos que almacenan pares clave-valor, donde
 
 La clase `HashMap` en Java es una implementación de la interfaz `Map`, que proporciona una estructura de datos basada en tablas hash. Permite almacenar y acceder eficientemente a elementos utilizando claves únicas. En el contexto de este proyecto, se utiliza un `HashMap` para asociar el nombre de un contacto con su instancia correspondiente.
 
+
+
+
+
+---
+
+### JSON: Estructura de Datos en Formato Clave-Valor
+
+**JSON** (JavaScript Object Notation) no es considerado un diccionario en sí mismo, sino un formato de intercambio de datos. Sin embargo, la estructura de un objeto JSON se asemeja a un diccionario en algunos aspectos.
+
+En **JSON**, los datos se representan en **pares clave-valor**, donde cada clave es única y se utiliza para acceder a su correspondiente valor. Esto se asemeja a la estructura de un diccionario, donde cada elemento se identifica por una clave y contiene un valor asociado.
+
+En muchos lenguajes de programación, es común utilizar estructuras de datos como **diccionarios** o **mapas** para almacenar y manipular objetos JSON. Estas estructuras permiten acceder a los valores mediante las claves y proporcionan métodos para agregar, modificar y eliminar elementos.
+
+JSON en sí mismo no es un diccionario, pero su estructura de pares clave-valor se asemeja a la de un diccionario y puede ser representado y manipulado utilizando estructuras de datos similares.
+

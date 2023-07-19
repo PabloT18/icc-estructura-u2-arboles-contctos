@@ -17,7 +17,11 @@ import java.util.HashMap;
 public class Contacto {
     private String nombre;
     private String telefono;
+
+    /// Colecciones de tipo String
     private List<String> emails;
+
+    /// Diccionario
     private Map<String, String> redesSociales;
 
     public Contacto(String nombre, String telefono) {
@@ -59,7 +63,10 @@ public class Contacto {
         this.redesSociales = redesSociales;
     }
 
-    // Otros métodos y atributos según tus necesidades
+    /// Agrega una red social al diccionario
+    public void agregarRedSocial(String redSocial, String usuario) {
+        redesSociales.put(redSocial, usuario);
+    }
 
     @Override
     public String toString() {
