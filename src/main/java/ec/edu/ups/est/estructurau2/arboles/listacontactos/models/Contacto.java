@@ -68,6 +68,18 @@ public class Contacto {
         redesSociales.put(redSocial, usuario);
     }
 
+    /// elimina una red social en base a su llave
+    public void eliminarRedSocial(String redSocial) {
+        redesSociales.remove(redSocial);
+    }
+
+    /// modifica el varlor de una redsocial en base a su llave
+    public void modificarRedSocial(String redSocial, String nuevaCuenta) {
+        if (redesSociales.containsKey(redSocial)) {
+            redesSociales.put(redSocial, nuevaCuenta);
+        }
+    }
+
     @Override
     public String toString() {
         return "Contacto:" + nombre;
