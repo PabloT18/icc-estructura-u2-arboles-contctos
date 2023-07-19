@@ -25,12 +25,10 @@ public class Contacto {
         return telefono;
     }
 
-    
-    
     // Otros métodos y atributos según tus necesidades
 
     @Override
     public String toString() {
-        return "Contacto:" + nombre + " Telefono: " +telefono;
+        return "Contacto:" + nombre;
     }
 }

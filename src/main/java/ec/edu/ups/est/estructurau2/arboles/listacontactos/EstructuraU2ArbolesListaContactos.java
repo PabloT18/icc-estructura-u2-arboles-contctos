@@ -27,6 +27,7 @@ public class EstructuraU2ArbolesListaContactos {
         arbol.insertar(contacto4);
         arbol.insertar(new Contacto("Julian", "5789123"));
         arbol.insertar(new Contacto("Jhon", "567823"));
+        arbol.insertar(new Contacto("Jhonn", "5789123"));
 
         System.out.println("Árbol binario de búsqueda creado exitosamente.");
 
@@ -35,6 +36,10 @@ public class EstructuraU2ArbolesListaContactos {
         arbol.printTreeNode(arbol.getRoot(), "", true);
         System.out.println("\n");
         System.out.println(arbol.estaBalanceado());
+
+        arbol.eliminarContacto("Pedroo");
+        arbol.printTreeNode(arbol.getRoot(), "", true);
+        System.out.println("\n");
 
     }
 }
