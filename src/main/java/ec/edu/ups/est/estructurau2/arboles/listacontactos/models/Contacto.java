@@ -4,6 +4,12 @@
  */
 package ec.edu.ups.est.estructurau2.arboles.listacontactos.models;
 
+import java.util.List;
+import java.util.Map;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  *
  * @author pablo
@@ -11,10 +17,14 @@ package ec.edu.ups.est.estructurau2.arboles.listacontactos.models;
 public class Contacto {
     private String nombre;
     private String telefono;
+    private List<String> emails;
+    private Map<String, String> redesSociales;
 
     public Contacto(String nombre, String telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
+        this.emails = new ArrayList<>();
+        this.redesSociales = new HashMap<>();
     }
 
     public String getNombre() {
@@ -23,6 +33,30 @@ public class Contacto {
 
     public String getTelefono() {
         return telefono;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public List<String> getEmails() {
+        return this.emails;
+    }
+
+    public void setEmails(List<String> emails) {
+        this.emails = emails;
+    }
+
+    public Map<String, String> getRedesSociales() {
+        return this.redesSociales;
+    }
+
+    public void setRedesSociales(Map<String, String> redesSociales) {
+        this.redesSociales = redesSociales;
     }
 
     // Otros métodos y atributos según tus necesidades
